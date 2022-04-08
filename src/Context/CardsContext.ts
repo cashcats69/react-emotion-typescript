@@ -1,3 +1,3 @@
 import { createContext } from "react";
 
-export const CardsContext = createContext<string>('');
+export const CardsContext = createContext<string>("");

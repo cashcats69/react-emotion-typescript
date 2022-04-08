@@ -61,11 +61,11 @@ export const GeneralTemplate: React.FC = () => {
       return { en: item.en.split(" "), ru: item.ru };
     });
     const dataCards = sortedData.map((data) => {
-      let i = 0;
+      let iterator = 0;
       return {
         en: data.en.map((word) => {
-          i++;
-          return { id: i, word: word };
+          iterator++;
+          return { id: iterator, word: word };
         }),
         ru: data.ru,
       };
